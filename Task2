@@ -1,0 +1,10 @@
+package com.max.idea;
+
+public class DataType {
+    public static void main(String[] args){
+        byte a = 127;
+        System.out.println(a);
+        double b = 32973.377;
+        System.out.println(b);
+    }
+}

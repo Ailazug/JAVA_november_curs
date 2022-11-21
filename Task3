@@ -1,0 +1,14 @@
+package idea;
+
+public class Array {
+
+    public static void main(String[] args) {
+        int[] five = new int[] {2,8,7,44,11};
+        int last = five[five.length - 1];
+        int prev = five[five.length - 5];
+        five [0] = last;
+        five [4] = prev;
+        int res = five[0]+five[2];
+        System.out.println(res);
+    }
+}

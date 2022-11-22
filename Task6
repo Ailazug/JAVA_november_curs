@@ -1,0 +1,61 @@
+package idea;
+
+import java.util.Scanner;
+
+public class Array {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Выберите что переводить: 1 - Масса, 2 - Расстояние: ");
+        int x = in.nextInt();
+        int y = 0;
+        float c = 0;
+        if (x == 1) {
+            System.out.print("Выберите единицу измерения: 1 - Килограмм, 2 - Фунт, 3 - Унция, 4 - Стоун: ");
+            y = in.nextInt();
+            if (y == 1) {
+                System.out.print("Введите число: ");
+                c = in.nextInt();
+                System.out.print("Килограмм:" + c + "\nФунт" + c*2.20462 + "\nУнция:" + c*35.274 + "\nСтоун:" + c*0.157473);
+            } else if (y == 2) {
+                System.out.print("Введите число: ");
+                c = in.nextInt();
+                System.out.print("Килограмм:" + c*0.453592 + "\nФунт" + c + "\nУнция:" + c*16 + "\nСтоун:" + c*0.0714286);
+            } else if (y == 3) {
+                System.out.print("Введите число: ");
+                c = in.nextInt();
+                System.out.print("Килограмм:" + c*0.0283495 + "\nФунт" + c*0.0625 + "\nУнция:" + c + "\nСтоун:" + c*0.00446429);
+            } else if (y == 4) {
+                System.out.print("Введите число: ");
+                c = in.nextInt();
+                System.out.print("Килограмм:" + c*6.35029 + "\nФунт" + c*14 + "\nУнция:" + c*224 + "\nСтоун:" + c);
+            }
+            else {
+                System.out.print("Error!Введено неправильное значение!");
+            }
+        }
+
+            if (x == 2) {
+                System.out.print("Выберите единицу измерения: 1 - Метр, 2 - Миля, 3 - Ярд, 4 - Фут: ");
+                y = in.nextInt();
+                if (y == 1) {
+                    System.out.print("Введите число: ");
+                    c = in.nextInt();
+                    System.out.print("Метр: " + c + "\nМиля: " + c*0.000621371 + "\nЯрд: " + c*1.09361 + "\nФут: " + c*3.28084);
+                } else if (y == 2) {
+                    System.out.print("Введите число: ");
+                    c = in.nextInt();
+                    System.out.print("Метр: " + c *1609.34+ "\nМиля: " + c + "\nЯрд: " + c*1760 + "\nФут: " + c*5280);
+                } else if (y == 3) {
+                    System.out.print("Введите число: ");
+                    c = in.nextInt();
+                    System.out.print("Метр: " + c*0.9144 + "\nМиля: " + c*0.000568182 + "\nЯрд: " + c + "\nФут: " + c*3);
+                } else if (y == 4) {
+                    System.out.print("Введите число: ");
+                    c = in.nextInt();
+                    System.out.print("Метр: " + c*0.3048 + "\nМиля: " + c*0.000189394 + "\nЯрд: " + c*0.333333 + "\nФут: " + c);
+                } else System.out.print("Error!Введено неправильное значение!");
+            }
+            else System.out.print("Error!Введено неправильное значение!");
+    }
+}

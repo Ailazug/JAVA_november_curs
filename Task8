@@ -8,13 +8,16 @@ public class Array {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите число " );
         int x = in.nextInt();
-        int y = -1;
-        int z = 0;
-        for (int i = 0; i < x/2; i++ ){
-            y=y+2;
-            z=y+y;
-            System.out.println(y + " " + z);
-        }
-        System.out.println(z);
+        int y = 0;
+       if (x>0) {
+           for (int i = 1; i <= x; i = i + 2) {
+               y = y + i;
+           }
+           System.out.println(y);
+       }
+       else
+       {
+           System.out.println("Вы ввели отрицательное число");
+       }
     }
 }

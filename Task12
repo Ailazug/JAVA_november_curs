@@ -1,0 +1,21 @@
+package idea;
+
+public class Array {
+
+    public static void main(String[] args) {
+        String j = "I like Java!!!";
+        boolean r1,r2, r3;
+        String d, d1, d3;
+        r1 = j.contains("Java");
+        r2 = j.startsWith("I like");
+        r3 = j.endsWith("!!!");
+        if (r1==r2==r3==true) {
+            d=j.toUpperCase();
+            System.out.println(d);
+        }
+        d1 = j.replace('a','o');
+        d3 = d1.substring(7,11);
+        System.out.println(d3);
+
+    }
+}

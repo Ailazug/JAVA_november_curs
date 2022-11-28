@@ -1,0 +1,25 @@
+package idea;
+
+import java.util.Scanner;
+
+public class Array {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите первое число ");
+        String x = in.next();
+        System.out.print("Введите второе число ");
+        int y = in.nextInt();
+        int z = Integer.parseInt(x);
+        if (y>z) {
+            System.out.println(y);
+            double k = z;
+            System.out.println(k);
+        }
+        else {
+            System.out.println(z);
+            double k = y;
+            System.out.println(k);
+        }
+    }
+}

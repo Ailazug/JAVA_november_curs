@@ -1,0 +1,50 @@
+package idea;
+
+import java.util.Scanner;
+
+public class Array {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        System.out.print("Введите уравнение: ");
+        String x = in.next();
+        char y, z, k, d;
+        y=x.charAt(0);
+        //d-знак
+        d=x.charAt(1);
+        z=x.charAt(2);
+        k=x.charAt(4);
+        int result;
+        if (d=='+')
+        {
+            if (y == 'x')
+            {
+                result = k-z;
+                System.out.println(result);
+            }
+            if (z == 'x') {
+                result = k - y;
+                System.out.println(result);
+            }
+            if (k == 'x')
+            {  result = z+y;
+                System.out.println(result);
+            }}
+        if (d=='-')
+        {
+            if (y == 'x')
+        {
+            result = k+z;
+            System.out.println(result);
+        }
+        if (z == 'x') {
+            result = y-k;
+            System.out.println(result);
+        }
+        if (k == 'x') {
+            result = y - z;
+            System.out.println(result);
+        }
+        }
+    }
+}

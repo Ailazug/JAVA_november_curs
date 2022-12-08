@@ -16,6 +16,15 @@ public class Array {
                 }
                 else if (g.contains("Подсказка")) {
                     System.out.println("Запакаванная бактерия!!!");
+                    String h = in.nextLine();
+                    if (h.contains("Заархивированный вирус")){
+                        System.out.println("Правильный ответ!");
+                        break;
+                    }
+                    else {
+                        System.out.println("Обидно, приходи в другой раз");
+                        break;
+                    }
                 }
                 else {
                     System.out.println("Подумай еще!");

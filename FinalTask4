@@ -1,0 +1,50 @@
+package idea;
+
+import java.util.Scanner;
+
+public class Array {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Загадка: “Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает”.  " + "\n" + "Ответ: ");
+        for (int i = 1; i <= 3; i++) {
+            String g = in.nextLine();
+            if (i == 1) {
+                if (g.contains("Заархивированный вирус")){
+                    System.out.println("Правильный ответ!");
+                    break;
+                }
+                else if (g.contains("Подсказка")) {
+                    System.out.println("Запакаванная бактерия!!!");
+                }
+                else {
+                    System.out.println("Подумай еще!");
+                }
+            }
+            else  if (i <3) {
+                if (g.contains("Заархивированный вирус")){
+                    System.out.println("Правильный ответ!");
+                    break;
+                }
+                else if (g.contains("Подсказка")) {
+                    System.out.println("Подсказка уже недоступна");
+                }
+                else {
+                    System.out.println("Подумай еще!");
+                }
+            }
+            else   {
+                if (g.contains("Заархивированный вирус")){
+                    System.out.println("Правильный ответ!");
+                    break;
+                }
+                else if (g.contains("Подсказка")) {
+                    System.out.println("Подсказка уже недоступна");
+                }
+                else {
+                    System.out.println("Обидно, приходи в другой раз");
+                }
+            }
+        }
+        }
+}
